@@ -17,12 +17,12 @@ export function About() {
             <div className="aspect-[4/5] rounded-2xl overflow-hidden relative group">
               <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-500" />
               <img 
-                src="https://picsum.photos/seed/portfolio/800/1000" 
-                alt="Profile placeholder" 
+                src="assets/leletu-kamana.jpg" 
+                alt="Profile of Leletu Kamana, a student software developer" 
                 className="object-cover w-full h-full grayscale-[50%] contrast-125 group-hover:grayscale-0 transition-all duration-700"
               />
               <div className="absolute bottom-4 left-4 right-4 text-center z-20 opacity-0 group-hover:opacity-100 transition-opacity bg-background/80 backdrop-blur-sm py-2 rounded-lg text-sm text-muted-foreground pointer-events-none">
-                Replace this placeholder image
+                Leletu Kamana - Student Software Developer
               </div>
             </div>
             {/* Decorative block */}
