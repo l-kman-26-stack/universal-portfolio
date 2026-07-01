@@ -53,14 +53,19 @@ export function Experience() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               className="relative pl-8 md:pl-0"
             >
+              {/* Mobile Timeline Line (visible only on small screens) */}
+              {index !== defaultExperience.length - 1 && (
+                <div className="md:hidden absolute left-[-1.5rem] top-6 bottom-[-3rem] w-px bg-border" />
+              )}
+
               <div className="md:grid md:grid-cols-12 gap-8 items-start">
 
                 {/* Left Side */}
                 <div className="md:col-span-4 md:text-right relative">
 
-                  {/* Timeline Line */}
+                  {/* Desktop Timeline Line */}
                   {index !== defaultExperience.length - 1 && (
-                    <div className="hidden md:block absolute left-full -translate-x-1/2 top-6 bottom-[-3.5rem] w-px bg-border" />
+                    <div className="hidden md:block absolute left-full -translate-x-1/2 top-6 bottom-[-4rem] w-px bg-border" />
                   )}
 
                   {/* Timeline Dot */}
