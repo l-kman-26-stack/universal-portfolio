@@ -50,29 +50,29 @@ export function Contact() {
           >
             <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">Let's Connect</h2>
             <h3 className="text-4xl md:text-6xl font-serif font-bold text-foreground mb-6 leading-tight">
-              <Editable>[Ready to build something extraordinary?]</Editable>
+              <Editable>Let's Connect</Editable>
             </h3>
             <p className="text-lg text-muted-foreground mb-12">
-              <Editable>[Whether you have a project in mind, looking for a consultation, or just want to say hi, my inbox is always open.]</Editable>
+              <Editable>I am open to learning opportunities, collaboration, and software development projects that help me grow my skills.</Editable>
             </p>
 
             <div className="space-y-6 text-lg">
               <div>
                 <span className="block text-sm text-muted-foreground font-medium mb-1">Email</span>
-                <a href="#" className="font-medium text-foreground hover:text-primary transition-colors">
-                  <Editable>[your.email@example.com]</Editable>
+                <a href="mailto:leletukamana9@outlook.com" className="font-medium text-foreground hover:text-primary transition-colors">
+                  <Editable>leletukamana9@outlook.com</Editable>
                 </a>
               </div>
               <div>
                 <span className="block text-sm text-muted-foreground font-medium mb-1">LinkedIn</span>
-                <a href="#" className="font-medium text-foreground hover:text-primary transition-colors">
-                  <Editable>[linkedin.com/in/yourprofile]</Editable>
+                <a href="https://www.linkedin.com/in/leletu-kamana-1a22b8416" className="font-medium text-foreground hover:text-primary transition-colors">
+                  <Editable>linkedin.com/in/leletu-kamana-1a22b8416</Editable>
                 </a>
               </div>
               <div>
-                <span className="block text-sm text-muted-foreground font-medium mb-1">GitHub / Portfolio</span>
-                <a href="#" className="font-medium text-foreground hover:text-primary transition-colors">
-                  <Editable>[github.com/yourusername]</Editable>
+                <span className="block text-sm text-muted-foreground font-medium mb-1">Phone / Location</span>
+                <a href="tel:+27725813872" className="font-medium text-foreground hover:text-primary transition-colors">
+                  <Editable>072 581 3872 | Port Elizabeth, 6385</Editable>
                 </a>
               </div>
             </div>
@@ -145,7 +145,7 @@ export function Contact() {
                   )}
                 />
                 <Button type="submit" size="lg" className="w-full text-base h-12 rounded-xl">
-                  <Editable>[Send Message]</Editable>
+                  <Editable>Send Message</Editable>
                 </Button>
               </form>
             </Form>

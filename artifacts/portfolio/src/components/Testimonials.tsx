@@ -5,16 +5,16 @@ import { Quote } from 'lucide-react';
 
 const defaultTestimonials = [
   {
-    quote: "One of the rare professionals who truly understands both the deep technical constraints and the high-level business goals. An absolute game-changer for our team.",
-    name: "Sarah Jenkins",
-    title: "VP of Engineering",
-    company: "TechNova"
+    quote: "Academic reference from IIE Rosebank International Nelson Mandela Bay.",
+    name: "Professor A Phewa",
+    title: "Lecturer",
+    company: "IIE Rosebank International NMB"
   },
   {
-    quote: "Brought clarity to chaos. They didn't just write code or design screens; they fundamentally improved how our entire organization thinks about the product.",
-    name: "Marcus Chen",
-    title: "Founder & CEO",
-    company: "Startup Inc"
+    quote: "Academic reference from IIE Rosebank International Nelson Mandela Bay.",
+    name: "Professor M Mbongwe",
+    title: "Lecturer",
+    company: "IIE Rosebank International NMB"
   }
 ];
 

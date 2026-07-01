@@ -5,22 +5,22 @@ import { ArrowUpRight } from 'lucide-react';
 
 const defaultProjects = [
   {
-    title: "Global E-Commerce Platform",
-    desc: "Architected a microservices-based platform handling 10k+ concurrent users, resulting in a 40% increase in checkout speed.",
-    tags: ["React", "Node.js", "AWS", "System Design"],
-    image: "https://picsum.photos/seed/proj1/800/600"
+    title: "Responsive Portfolio Website",
+    desc: "A personal portfolio website built to present my studies, skills, contact details, and Software Development journey.",
+    tags: ["HTML", "CSS", "React", "Portfolio"],
+    image: "https://picsum.photos/seed/portfolio-study/800/600"
   },
   {
-    title: "Fintech Mobile Application",
-    desc: "Led the UX design and frontend development for a personal finance app that reached #1 in the app store within 3 months.",
-    tags: ["React Native", "Figma", "UX Research", "GraphQL"],
-    image: "https://picsum.photos/seed/proj2/800/600"
+    title: "Java Practice Programs",
+    desc: "Beginner programming exercises focused on variables, decisions, loops, methods, and clear problem-solving logic.",
+    tags: ["Java", "Programming", "Problem Solving"],
+    image: "https://picsum.photos/seed/java-practice/800/600"
   },
   {
-    title: "AI-Powered Analytics Dashboard",
-    desc: "Built a real-time data visualization tool for enterprise clients, translating complex ML models into actionable insights.",
-    tags: ["Python", "Vue.js", "D3.js", "Machine Learning"],
-    image: "https://picsum.photos/seed/proj3/800/600"
+    title: "Research and Data Tasks",
+    desc: "Academic work involving quantitative and qualitative research, data collection, and basic data analysis.",
+    tags: ["Research", "Data Collection", "Analysis"],
+    image: "https://picsum.photos/seed/research-task/800/600"
   }
 ];
 
@@ -37,7 +37,7 @@ export function Projects() {
           >
             <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">Selected Work</h2>
             <h3 className="text-3xl md:text-5xl font-serif font-bold text-foreground">
-              <Editable>[Featured Projects]</Editable>
+              <Editable>Student Projects and Practice</Editable>
             </h3>
           </motion.div>
         </div>
@@ -63,20 +63,20 @@ export function Projects() {
 
               <div className={`${index % 2 !== 0 ? 'md:col-start-1' : ''}`}>
                 <h4 className="text-3xl font-serif font-bold text-foreground mb-4">
-                  <Editable>[{project.title}]</Editable>
+                  <Editable>{project.title}</Editable>
                 </h4>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  <Editable>[{project.desc}]</Editable>
+                  <Editable>{project.desc}</Editable>
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tags.map((tag, i) => (
                     <span key={i} className="px-4 py-1.5 rounded-full text-xs font-medium bg-background border border-border text-foreground">
-                      <Editable>[{tag}]</Editable>
+                      <Editable>{tag}</Editable>
                     </span>
                   ))}
                 </div>
                 <a href="#" className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors group">
-                  <Editable>[View Project]</Editable>
+                  <Editable>View Details</Editable>
                   <ArrowUpRight className="ml-2 w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </a>
               </div>

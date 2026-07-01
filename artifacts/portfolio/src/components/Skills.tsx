@@ -6,33 +6,33 @@ import { Code2, PenTool, Lightbulb, Search, MessageSquare, Briefcase } from 'luc
 const defaultSkills = [
   {
     icon: Code2,
-    title: "Software Architecture",
-    desc: "Designing scalable, maintainable systems that grow with business needs."
+    title: "Java Programming",
+    desc: "Building a beginner-friendly foundation in writing and understanding Java code."
   },
   {
     icon: PenTool,
-    title: "UI/UX Design",
-    desc: "Crafting intuitive interfaces that delight users and drive engagement."
+    title: "HTML and CSS",
+    desc: "Creating simple, responsive, and visually appealing web pages using core web technologies."
   },
   {
     icon: Lightbulb,
-    title: "Product Strategy",
-    desc: "Aligning technical execution with high-level business objectives."
+    title: "Microsoft Office",
+    desc: "Moderate experience using Microsoft Word and Excel for academic and practical tasks."
   },
   {
     icon: Search,
-    title: "User Research",
-    desc: "Uncovering deep insights to inform product decisions and features."
+    title: "Research Skills",
+    desc: "Experience with quantitative and qualitative research, data collection, and data analysis."
   },
   {
     icon: MessageSquare,
-    title: "Cross-functional Comm",
-    desc: "Bridging the gap between engineering, design, and stakeholders."
+    title: "Communication",
+    desc: "Able to communicate in English at an intermediate level and IsiXhosa conversationally."
   },
   {
     icon: Briefcase,
-    title: "Team Leadership",
-    desc: "Mentoring engineers and fostering a culture of continuous learning."
+    title: "Problem Solving",
+    desc: "Open-minded and practical when learning new concepts and solving software development tasks."
   }
 ];
 
@@ -49,10 +49,10 @@ export function Skills() {
           >
             <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">Core Competencies</h2>
             <h3 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-6">
-              <Editable>[What I Bring to the Table]</Editable>
+              <Editable>Skills and Abilities</Editable>
             </h3>
             <p className="text-lg text-muted-foreground">
-              <Editable>[A blend of technical prowess and strategic thinking, honed over years of diverse project experience.]</Editable>
+              <Editable>A growing set of technical, communication, and research skills developed through my Software Development studies.</Editable>
             </p>
           </motion.div>
         </div>
@@ -71,10 +71,10 @@ export function Skills() {
                 <skill.icon className="w-6 h-6" />
               </div>
               <h4 className="text-xl font-bold text-foreground mb-3">
-                <Editable>[{skill.title}]</Editable>
+                <Editable>{skill.title}</Editable>
               </h4>
               <p className="text-muted-foreground leading-relaxed">
-                <Editable>[{skill.desc}]</Editable>
+                <Editable>{skill.desc}</Editable>
               </p>
             </motion.div>
           ))}

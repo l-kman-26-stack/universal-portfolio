@@ -26,7 +26,7 @@ export function Nav() {
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <a href="#" className="text-2xl font-serif font-bold tracking-tighter">
-          <Editable as="span">[Initials]</Editable>
+          <Editable as="span">LK</Editable>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
