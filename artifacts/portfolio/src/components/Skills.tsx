@@ -71,7 +71,7 @@ export function Skills() {
                 <skill.icon className="w-6 h-6" />
               </div>
               <h4 className="text-xl font-bold text-foreground mb-3">
-                <Editable>]{skill.title}]</Editable>
+                <Editable>[{skill.title}]</Editable>
               </h4>
               <p className="text-muted-foreground leading-relaxed">
                 <Editable>[{skill.desc}]</Editable>
