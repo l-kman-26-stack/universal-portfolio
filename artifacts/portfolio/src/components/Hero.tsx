@@ -65,7 +65,7 @@ export function Hero() {
           >
             <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed mb-12">
               <Editable>
-                Information Technology undergraduate at IIE Rosebank College Nelson Mandela Bay, building a strong foundation in Java, HTML, CSS, and user-friendly web development.
+                Information Technology undergraduate at IIE Rosebank International University-College, Nelson Mandela Bay, building a strong foundation in Java, HTML, CSS, and user-friendly web development.
               </Editable>
             </p>
           </motion.div>

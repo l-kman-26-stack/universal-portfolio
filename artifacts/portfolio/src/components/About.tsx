@@ -45,7 +45,7 @@ export function About() {
               <div className="prose prose-lg dark:prose-invert prose-p:text-muted-foreground mb-10">
                 <p>
                   <Editable>
-                    I am an Information Technology undergraduate at IIE Rosebank College Nelson Mandela Bay Campus, currently studying toward a Diploma in Software Development. I am open-minded, practical, and interested in building responsive, user-friendly websites while improving my Java, HTML, and CSS skills.
+                    I am an Information Technology undergraduate at IIE Rosebank International UniversityCollege Nelson Mandela Bay Campus, currently studying toward a Diploma in Software Development. I am open-minded, practical, and interested in building responsive, user-friendly websites while improving my Java, HTML, and CSS skills.
                   </Editable>
                 </p>
               </div>
