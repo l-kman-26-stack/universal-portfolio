@@ -1,6 +1,6 @@
 import React from 'react';
 import { Editable } from './Editable';
-import { Github, Linkedin, Instagram } from 'lucide-react';
+import { Github, Linkedin, Instagram, Facebook } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -28,6 +28,10 @@ export function Footer() {
           <a href="https://www.instagram.com/l_kman_26/#" className="text-muted-foreground hover:text-foreground transition-colors">
             <Instagram className="w-5 h-5" />
             <span className="sr-only">Instagram</span>
+          </a>
+          <a href="https://www.facebook.com/lelethu.kamana" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Facebook className="w-5 h-5" />
+            <span className="sr-only">Facebook</span>
           </a>
         </div>
       </div>
