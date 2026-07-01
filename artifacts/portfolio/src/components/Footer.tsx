@@ -1,6 +1,6 @@
 import React from 'react';
 import { Editable } from './Editable';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Instagram } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,7 +13,11 @@ export function Footer() {
         </div>
 
         <div className="flex items-center gap-6">
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="https://github.com/l-kman-26-stack" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Github className="w-5 h-5" />
+            <span className="sr-only">GitHub</span>
+          </a>
+          <a href="https://github.com/leletu-kamana" className="text-muted-foreground hover:text-foreground transition-colors">
             <Github className="w-5 h-5" />
             <span className="sr-only">GitHub</span>
           </a>
@@ -21,9 +25,9 @@ export function Footer() {
             <Linkedin className="w-5 h-5" />
             <span className="sr-only">LinkedIn</span>
           </a>
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-            <Twitter className="w-5 h-5" />
-            <span className="sr-only">X (Twitter)</span>
+          <a href="https://www.instagram.com/@l_kman_26" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Instagram className="w-5 h-5" />
+            <span className="sr-only">Instagram</span>
           </a>
         </div>
       </div>
