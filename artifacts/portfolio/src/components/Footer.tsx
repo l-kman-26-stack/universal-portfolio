@@ -1,6 +1,6 @@
 import React from 'react';
 import { Editable } from './Editable';
-import { Github, Linkedin, Instagram, Facebook, WhatsApp } from 'lucide-react';
+import { Github, Linkedin, Instagram, Facebook, MessageCircle } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -34,7 +34,7 @@ export function Footer() {
             <span className="sr-only">Facebook</span>
           </a>
           <a href="https://wa.me/+27725813872" className="text-muted-foreground hover:text-foreground transition-colors">
-            <WhatsApp className="w-5 h-5" />
+            <MessageCircle className="w-5 h-5" />
             <span className="sr-only">WhatsApp</span>
           </a>
         </div>
