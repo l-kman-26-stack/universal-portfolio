@@ -26,7 +26,7 @@ const defaultExperience = [
 export function Experience() {
   return (
     <section id="experience" className="py-24 md:py-32 bg-background">
-      <div className="container mx-auto px-6 max-w-4xl">
+      <div className="container mx-auto px-6 max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +34,10 @@ export function Experience() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 md:mb-24"
         >
-          <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">Education Journey</h2>
+          <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">
+            Education Journey
+          </h2>
+
           <h3 className="text-3xl md:text-5xl font-serif font-bold text-foreground">
             <Editable>Education and Training</Editable>
           </h3>
@@ -47,28 +50,37 @@ export function Experience() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
               className="relative pl-8 md:pl-0"
             >
               {/* Timeline line (desktop) */}
-              <div className="hidden md:block absolute left-[30%] top-0 bottom-[-3rem] w-px bg-border last:bottom-0" />
-              
+              <div
+                className={`hidden md:block absolute left-1/3 top-8 ${
+                  index === defaultExperience.length - 1
+                    ? "bottom-8"
+                    : "bottom-[-3.5rem]"
+                } -translate-x-1/2 w-px bg-border`}
+              />
+
               <div className="md:grid md:grid-cols-12 gap-8 items-start">
                 <div className="md:col-span-4 md:text-right relative">
                   {/* Timeline dot */}
-                  <div className="absolute left-[-2rem] md:left-auto md:right-[-2.45rem] top-1.5 w-4 h-4 rounded-full bg-background border-2 border-primary z-10" />
-                  
+                  <div className="absolute left-[-2rem] md:left-full md:-translate-x-1/2 top-1.5 w-4 h-4 rounded-full bg-background border-2 border-primary z-10" />
+
                   <div className="text-lg font-bold text-foreground mb-1">
                     <Editable>{exp.period}</Editable>
                   </div>
+
                   <div className="text-primary font-medium">
                     <Editable>{exp.company}</Editable>
                   </div>
                 </div>
+
                 <div className="md:col-span-8 mt-2 md:mt-0">
                   <h4 className="text-2xl font-serif font-bold text-foreground mb-3">
                     <Editable>{exp.role}</Editable>
                   </h4>
+
                   <p className="text-muted-foreground leading-relaxed">
                     <Editable>{exp.desc}</Editable>
                   </p>
