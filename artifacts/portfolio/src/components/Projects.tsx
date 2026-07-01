@@ -8,13 +8,13 @@ const defaultProjects = [
     title: "Responsive Portfolio Website",
     desc: "A personal portfolio website built to present my studies, skills, contact details, and Software Development journey.",
     tags: ["HTML", "CSS", "React", "Portfolio"],
-    image: "blob:https://gemini.google.com/06b9154f-ef0a-4c6a-84a1-e95858da7720"
+    image: "https://picsum.photos/seed/portfolio-study/800/600"
   },
   {
     title: "Java Practice Programs",
     desc: "Beginner programming exercises focused on variables, decisions, loops, methods, and clear problem-solving logic.",
     tags: ["Java", "Programming", "Problem Solving"],
-    image: "blob:https://gemini.google.com/a7933cf4-6528-4447-b8ee-2e2dd46f2e78"
+    image: "https://picsum.photos/seed/java-practice/800/600"
   },
   {
     title: "Research and Data Tasks",
