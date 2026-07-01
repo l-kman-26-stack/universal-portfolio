@@ -34,16 +34,16 @@ export function Experience() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 md:mb-24"
         >
-          <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">
-            Education Journey
-          </h2>
-
+          <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">Education Journey</h2>
           <h3 className="text-3xl md:text-5xl font-serif font-bold text-foreground">
             <Editable>Education and Training</Editable>
           </h3>
         </motion.div>
 
-        <div className="space-y-12">
+        <div className="space-y-12 relative">
+          {/* Mobile Timeline Line (visible only on small screens) */}
+          <div className="md:hidden absolute left-2 top-2 bottom-2 w-px bg-border" />
+
           {defaultExperience.map((exp, index) => (
             <motion.div
               key={index}
@@ -53,44 +53,33 @@ export function Experience() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               className="relative pl-8 md:pl-0"
             >
-              {/* Mobile Timeline Line (visible only on small screens) */}
+              {/* Timeline line (desktop) - Fixed to 33.33% to precisely align between col-4 and col-8 gap */}
               {index !== defaultExperience.length - 1 && (
-                <div className="md:hidden absolute left-[-1.5rem] top-6 bottom-[-3rem] w-px bg-border" />
+                <div className="hidden md:block absolute left-[33.33%] top-3 bottom-[-3rem] w-px bg-border" />
               )}
-
+              
               <div className="md:grid md:grid-cols-12 gap-8 items-start">
-
-                {/* Left Side */}
                 <div className="md:col-span-4 md:text-right relative">
-
-                  {/* Desktop Timeline Line */}
-                  {index !== defaultExperience.length - 1 && (
-                    <div className="hidden md:block absolute left-full -translate-x-1/2 top-6 bottom-[-4rem] w-px bg-border" />
-                  )}
-
-                  {/* Timeline Dot */}
-                  <div className="absolute left-[-2rem] md:left-full md:-translate-x-1/2 top-1.5 w-4 h-4 rounded-full bg-background border-2 border-primary z-10" />
-
+                  
+                  {/* Timeline dot - Mobile aligned left, Desktop aligned perfectly to the 33.33% split axis */}
+                  <div className="absolute left-[-1.85rem] md:left-auto md:-right-[1.4rem] top-1.5 w-4 h-4 rounded-full bg-background border-2 border-primary z-10 -translate-x-1/2 md:translate-x-1/2" />
+                  
                   <div className="text-lg font-bold text-foreground mb-1">
                     <Editable>{exp.period}</Editable>
                   </div>
-
                   <div className="text-primary font-medium">
                     <Editable>{exp.company}</Editable>
                   </div>
                 </div>
 
-                {/* Right Side */}
                 <div className="md:col-span-8 mt-2 md:mt-0">
                   <h4 className="text-2xl font-serif font-bold text-foreground mb-3">
                     <Editable>{exp.role}</Editable>
                   </h4>
-
                   <p className="text-muted-foreground leading-relaxed">
                     <Editable>{exp.desc}</Editable>
                   </p>
                 </div>
-
               </div>
             </motion.div>
           ))}
