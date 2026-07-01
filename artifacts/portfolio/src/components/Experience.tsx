@@ -4,19 +4,17 @@ import { Editable } from './Editable';
 
 const defaultExperience = [
   {
-    role: "National Senior Certificate",
-    company: "Hoerskool Strelitzia High School",
-    period: "2021 - 2025",
-    desc: "Completed secondary education before starting tertiary studies in Information Technology and Software Development."
-  },
-
-  {
     role: "Diploma in Software Development",
     company: "IIE Rosebank International University-College NMB Campus",
     period: "2026 - Current",
     desc: "Studying Software Development and building knowledge in programming fundamentals, Java, HTML, CSS, and responsive web development."
   },
-  
+  {
+    role: "National Senior Certificate",
+    company: "Hoerskool Strelitzia High School",
+    period: "2021 - 2025",
+    desc: "Completed secondary education before starting tertiary studies in Information Technology and Software Development."
+  },
   {
     role: "Programming Training",
     company: "Self-study and College Practice",
