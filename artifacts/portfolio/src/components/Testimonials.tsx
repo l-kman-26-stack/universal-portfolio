@@ -37,14 +37,14 @@ export function Testimonials() {
             >
               <Quote className="w-12 h-12 text-primary-foreground/20 mb-6" />
               <p className="text-xl md:text-2xl font-serif leading-relaxed mb-8">
-                "<Editable>[{testimonial.quote}]</Editable>"
+                "<Editable>{testimonial.quote}</Editable>"
               </p>
               <div>
                 <div className="font-bold text-lg">
-                  <Editable>[{testimonial.name}]</Editable>
+                  <Editable>{testimonial.name}</Editable>
                 </div>
                 <div className="text-primary-foreground/70 text-sm">
-                  <Editable>[{testimonial.title}, {testimonial.company}]</Editable>
+                  <Editable>{testimonial.title}, {testimonial.company}</Editable>
                 </div>
               </div>
             </motion.div>

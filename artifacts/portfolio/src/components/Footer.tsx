@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="border-t border-border bg-background py-12">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-muted-foreground text-sm font-medium">
-          <Editable>[Leletu Kamana]</Editable> &copy; {currentYear}
+          <Editable>Leletu Kamana</Editable> &copy; {currentYear}
         </div>
 
         <div className="flex items-center gap-6">

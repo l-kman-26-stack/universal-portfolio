@@ -37,7 +37,7 @@ export function Projects() {
           >
             <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">Selected Work</h2>
             <h3 className="text-3xl md:text-5xl font-serif font-bold text-foreground">
-              <Editable>[Student Projects and Practice]</Editable>
+              <Editable>Student Projects and Practice</Editable>
             </h3>
           </motion.div>
         </div>
@@ -63,20 +63,20 @@ export function Projects() {
 
               <div className={`${index % 2 !== 0 ? 'md:col-start-1' : ''}`}>
                 <h4 className="text-3xl font-serif font-bold text-foreground mb-4">
-                  <Editable>[{project.title}]</Editable>
+                  <Editable>{project.title}</Editable>
                 </h4>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  <Editable>[{project.desc}]</Editable>
+                  <Editable>{project.desc}</Editable>
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tags.map((tag, i) => (
                     <span key={i} className="px-4 py-1.5 rounded-full text-xs font-medium bg-background border border-border text-foreground">
-                      <Editable>[{tag}]</Editable>
+                      <Editable>{tag}</Editable>
                     </span>
                   ))}
                 </div>
                 <a href="#" className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors group">
-                  <Editable>[View Details]</Editable>
+                  <Editable>View Details</Editable>
                   <ArrowUpRight className="ml-2 w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </a>
               </div>

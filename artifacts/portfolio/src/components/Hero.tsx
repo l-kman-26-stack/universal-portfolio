@@ -41,7 +41,7 @@ export function Hero() {
             className="flex flex-wrap items-center gap-3 text-2xl md:text-3xl lg:text-4xl text-muted-foreground mb-8"
           >
             <span>I am a</span>
-            <div className="relative inline-block h-[1.2em] overflow-hidden min-w-[18ch]">
+            <div className="relative inline-block h-[1.2em] overflow-hidden min-w-[50ch]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={roleIndex}
@@ -51,7 +51,7 @@ export function Hero() {
                   transition={{ duration: 0.4, ease: "anticipate" }}
                   className="absolute left-0 whitespace-nowrap text-primary font-medium"
                 >
-                  <Editable>{`[${roles[roleIndex]}]`}</Editable>
+                  <Editable>{`${roles[roleIndex]}`}</Editable>
                 </motion.div>
               </AnimatePresence>
             </div>

@@ -36,7 +36,7 @@ export function Experience() {
         >
           <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">Education Journey</h2>
           <h3 className="text-3xl md:text-5xl font-serif font-bold text-foreground">
-            <Editable>[Education and Training]</Editable>
+            <Editable>Education and Training</Editable>
           </h3>
         </motion.div>
 
@@ -59,18 +59,18 @@ export function Experience() {
                   <div className="absolute left-[-2rem] md:left-auto md:right-[-2.45rem] top-1.5 w-4 h-4 rounded-full bg-background border-2 border-primary z-10" />
                   
                   <div className="text-lg font-bold text-foreground mb-1">
-                    <Editable>[{exp.period}]</Editable>
+                    <Editable>{exp.period}</Editable>
                   </div>
                   <div className="text-primary font-medium">
-                    <Editable>[{exp.company}]</Editable>
+                    <Editable>{exp.company}</Editable>
                   </div>
                 </div>
                 <div className="md:col-span-8 mt-2 md:mt-0">
                   <h4 className="text-2xl font-serif font-bold text-foreground mb-3">
-                    <Editable>[{exp.role}]</Editable>
+                    <Editable>{exp.role}</Editable>
                   </h4>
                   <p className="text-muted-foreground leading-relaxed">
-                    <Editable>[{exp.desc}]</Editable>
+                    <Editable>{exp.desc}</Editable>
                   </p>
                 </div>
               </div>
