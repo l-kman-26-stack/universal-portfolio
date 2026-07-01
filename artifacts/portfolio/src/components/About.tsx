@@ -39,29 +39,29 @@ export function About() {
               <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">About Me</h2>
               <h3 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-6 leading-tight">
                 <Editable>
-                  Growing as a software developer through practical learning and problem solving.
+                  [Growing as a software developer through practical learning and problem solving.]
                 </Editable>
               </h3>
               <div className="prose prose-lg dark:prose-invert prose-p:text-muted-foreground mb-10">
                 <p>
                   <Editable>
-                    I am an Information Technology undergraduate at IIE Rosebank College Nelson Mandela Bay Campus, currently studying toward a Diploma in Software Development. I am open-minded, practical, and interested in building responsive, user-friendly websites while improving my Java, HTML, and CSS skills.
+                    [I am an Information Technology undergraduate at IIE Rosebank College Nelson Mandela Bay Campus, currently studying toward a Diploma in Software Development. I am open-minded, practical, and interested in building responsive, user-friendly websites while improving my Java, HTML, and CSS skills.]
                   </Editable>
                 </p>
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-3 gap-8 pt-8 border-t border-border">
-                {
+                {[
                   { value: "2026", label: "Diploma Started" },
                   { value: "3", label: "Core Coding Skills" },
-                  { value: "2", label: "Spoken Languages" }
-                .map((stat, i) => (
+                  { value: "2", label: "Spoken Languages" },
+                ].map((stat, i) => (
                   <div key={i}>
                     <div className="text-4xl font-serif font-bold text-foreground mb-1">
-                      <Editable>{stat.value}</Editable>
+                      <Editable>[{stat.value}]</Editable>
                     </div>
                     <div className="text-sm text-muted-foreground font-medium">
-                      <Editable>{stat.label}</Editable>
+                      <Editable>[{stat.label}]</Editable>
                     </div>
                   </div>
                 ))}

@@ -49,10 +49,10 @@ export function Skills() {
           >
             <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-4">Core Competencies</h2>
             <h3 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-6">
-              <Editable>Skills and Abilities</Editable>
+              <Editable>[Skills and Abilities]</Editable>
             </h3>
             <p className="text-lg text-muted-foreground">
-              <Editable>A growing set of technical, communication, and research skills developed through my Software Development studies.</Editable>
+              <Editable>[A growing set of technical, communication, and research skills developed through my Software Development studies.]</Editable>
             </p>
           </motion.div>
         </div>
@@ -71,10 +71,10 @@ export function Skills() {
                 <skill.icon className="w-6 h-6" />
               </div>
               <h4 className="text-xl font-bold text-foreground mb-3">
-                <Editable>{skill.title}</Editable>
+                <Editable>]{skill.title}]</Editable>
               </h4>
               <p className="text-muted-foreground leading-relaxed">
-                <Editable>{skill.desc}</Editable>
+                <Editable>[{skill.desc}]</Editable>
               </p>
             </motion.div>
           ))}

@@ -26,7 +26,7 @@ export function Nav() {
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <a href="#" className="text-2xl font-serif font-bold tracking-tighter">
-          <Editable as="span">LK</Editable>
+          <Editable as="span">[LK]</Editable>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -50,7 +50,7 @@ export function Nav() {
             title="Toggle Edit Mode"
           >
             <Edit2 className="h-4 w-4" />
-            <span className="sr-only">Toggle Edit Mode</span>
+            <span className="sr-only">[Toggle Edit Mode]</span>
           </Button>
 
           {mounted && (
@@ -61,7 +61,7 @@ export function Nav() {
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             >
               {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-              <span className="sr-only">Toggle theme</span>
+              <span className="sr-only">[Toggle theme]</span>
             </Button>
           )}
         </div>
