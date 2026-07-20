@@ -17,7 +17,7 @@ export function About() {
             <div className="aspect-[4/5] rounded-2xl overflow-hidden relative group">
               <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-500" />
               <img 
-                src="https://github.com/leletu-kamana/Leletu-Kamana-portfolio/blob/main/assets%2Fleletu-kamana.jpg " 
+                src="https://github.com/leletu-kamana/Leletu-Kamana-portfolio/assets/leletu-kamana.jpg " 
                 alt="Profile of Leletu Kamana, a student software developer" 
                 className="object-cover w-full h-full grayscale-[50%] contrast-125 group-hover:grayscale-0 transition-all duration-700"
               />
